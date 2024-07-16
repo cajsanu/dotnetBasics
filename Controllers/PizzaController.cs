@@ -1,6 +1,7 @@
 using dotnetBasics.Models;
 using dotnetBasics.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace dotnetBasics.Controllers;
 
@@ -13,7 +14,16 @@ public class PizzaController : ControllerBase
     }
 
     // GET all action
-    [HttpGet]
+    /// <summary>
+    /// Gets all pizzas on the menu.
+    /// </summary>
+    /// <response code="200">Returns all pizzas</response>
+    /// <response code="400">Bad request, can't return pizzas</response>
+    /// <returns> The id, name and boolean to check if the pizza is glutenfree </returns>
+    [HttpGet(Name = nameof(GetAll))]
+    [Produces("text/plain")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public ActionResult<List<Pizza>> GetAll() => PizzaService.GetAll();
 
 

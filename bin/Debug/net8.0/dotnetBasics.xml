@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dotnetBasics</name>
+    </assembly>
+    <members>
+        <member name="M:dotnetBasics.Controllers.PizzaController.GetAll">
+            <summary>
+            Gets all pizzas on the menu.
+            </summary>
+            <response code="200">Returns all pizzas</response>
+            <response code="400">Bad request, can't return pizzas</response>
+            <returns> The id, name and boolean to check if the pizza is glutenfree </returns>
+        </member>
+    </members>
+</doc>

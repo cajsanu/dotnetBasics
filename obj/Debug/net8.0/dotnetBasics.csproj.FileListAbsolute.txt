@@ -31,3 +31,5 @@
 /Users/cajsanummelin/repos/dotnetBasics/obj/Debug/net8.0/dotnetBasics.genruntimeconfig.cache
 /Users/cajsanummelin/repos/dotnetBasics/obj/Debug/net8.0/ref/dotnetBasics.dll
 /Users/cajsanummelin/repos/dotnetBasics/obj/Debug/net8.0/dotnetBasics.sourcelink.json
+/Users/cajsanummelin/repos/dotnetBasics/bin/Debug/net8.0/dotnetBasics.xml
+/Users/cajsanummelin/repos/dotnetBasics/obj/Debug/net8.0/dotnetBasics.xml
